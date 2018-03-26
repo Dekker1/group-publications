@@ -36,8 +36,8 @@ for p in people:
     articles += querier.articles
 
 unique_articles = [a for a in articles if a['title'] in {a['title'] for a in articles}]
+unique_articles = sorted(unique_articles, key=lambda a: a['year'], reverse=True)
 
-querier.articles = articles
-
+querier.articles = unique_articles
 scholar.csv(querier, header=True, sep=',')
 
