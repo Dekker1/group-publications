@@ -39,5 +39,5 @@ unique_articles = [a for a in articles if a['title'] in {a['title'] for a in art
 
 querier.articles = articles
 
-scholar.txt(querier, False)
+scholar.csv(querier, header=True, sep=',')
 
