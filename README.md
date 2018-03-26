@@ -8,7 +8,7 @@ usage of this script is currently based on
 ## Usage
 
 To use the script call it with a comma separated CSV file where each row
-represents one academic as imput. Each row of this file consists of a list of
+represents one academic as input. Each row of this file consists of a list of
 author names, a column for their starting year, and a column for their leaving
 year. `current` is the placeholder for the current year. For example see the
 following file (`test.csv`):
